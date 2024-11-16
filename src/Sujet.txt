@@ -1,0 +1,87 @@
+Objectif :
+Créer une application console en Java qui permet :
+1. D’ajouter des matières avec leurs coefficients et leurs notes.
+2. De calculer une moyenne pondérée basée sur les coefficients.
+3. D’afficher les matières avec des notes faibles (inférieures à 10).
+4. (Optionnel) De sauvegarder et de charger les matières depuis un fichier texte ou une base de données.
+
+Contexte :
+Ce projet a pour but de renforcer les compétences en Java tout en travaillant sur :
+- Les bases de la programmation orientée objet (POO).
+- La manipulation de listes et des boucles.
+- Les principes de Développement efficace et de Qualité de développement (code propre et structuré).
+
+Spécifications :
+1. Fonctionnalités obligatoires :
+   - Ajouter une matière :
+     * L'utilisateur entre :
+       - Le nom de la matière (exemple : "R3.07 SQL").
+       - Le coefficient (exemple : 5).
+       - La note obtenue (exemple : 6).
+
+   - Calculer la moyenne pondérée :
+     * Moyenne calculée avec la formule :
+       Moyenne = ∑(Note × Coefficient) / ∑(Coefficient)
+
+   - Afficher les matières avec des notes faibles :
+     * Liste toutes les matières ayant une note inférieure à 10 avec leur coefficient.
+
+2. Fonctionnalités optionnelles :
+   - Sauvegarder les matières dans un fichier texte (format simple comme CSV).
+   - Charger les matières depuis ce fichier au démarrage de l’application.
+   - Ajouter un menu interactif pour naviguer entre les options.
+
+Enoncé détaillé des tâches :
+1. Créer une classe Matiere :
+   - Attributs :
+     * String nom : Le nom de la matière.
+     * double coefficient : Le coefficient de la matière.
+     * double note : La note obtenue dans la matière.
+   - Méthodes :
+     * Un constructeur pour initialiser une matière.
+     * Des getters pour accéder aux attributs.
+
+2. Créer une classe GestionnaireNotes :
+   - Attributs :
+     * Une liste de Matiere.
+   - Méthodes :
+     * Ajouter une matière : Ajoute une matière à la liste.
+     * Calculer la moyenne pondérée : Retourne la moyenne pondérée des notes.
+     * Lister les matières faibles : Retourne les matières avec des notes < 10.
+
+3. Créer une classe principale Main :
+   - Contient le menu interactif avec les options suivantes :
+     * Ajouter une matière.
+     * Calculer la moyenne pondérée.
+     * Afficher les matières faibles.
+     * Quitter.
+
+Exemple d'interaction utilisateur :
+Au démarrage :
+Bienvenue dans l'application de gestion des notes !
+1. Ajouter une matière
+2. Calculer la moyenne pondérée
+3. Afficher les matières avec des notes faibles
+4. Quitter
+Votre choix : 1
+
+Ajouter une matière :
+Entrez le nom de la matière : R3.07 SQL
+Entrez le coefficient : 5
+Entrez la note obtenue : 6
+Matière ajoutée avec succès !
+
+Calculer la moyenne :
+Moyenne pondérée : 8.25
+
+Afficher les matières faibles :
+Matières avec des notes faibles :
+- R3.07 SQL : 6 (Coefficient : 5)
+
+Compétences travaillées :
+- Java : Classes, objets, listes, entrées utilisateur, et boucles.
+- Développement efficace : Organisation du code en plusieurs classes et méthodes.
+- Qualité de développement : Respect des bonnes pratiques (nommage clair, commentaires, modularité).
+
+Temps estimé :
+8 à 10 heures (réparties en sessions de 2 heures).
